@@ -1,0 +1,34 @@
+package W06_ObjectsAndClasses.Exercises.P02_Articles;
+
+public class Articles {
+    private String title;
+    private String content;
+    private String author;
+
+    public Articles(String title, String content, String author) {
+        this.title = title;
+        this.content = content;
+        this.author = author;
+    }
+
+    public void edit (String newContent){
+
+        this.content = newContent;
+    }
+
+    public void changeAuthor (String newAuthor){
+
+        this.author = newAuthor;
+    }
+
+    public void changeTitle (String newTitle){
+
+        this.title = newTitle;
+    }
+
+    @Override
+    public String toString(){
+
+        return this.title + " -" + this.content + ":" + this.author;
+    }
+}
